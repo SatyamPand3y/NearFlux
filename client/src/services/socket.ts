@@ -16,8 +16,14 @@ class SocketService {
       return this.socket;
     }
 
-    const host = window.location.hostname;
-    const url = serverUrl || `http://${host}:3000`;
+    // If running Vite dev server (port 5173), connect to localhost:3000.
+    // Otherwise (Production/Render), connect directly to the active window origin.
+    const isViteDev = window.location.port === '5173';
+    const defaultUrl = isViteDev
+      ? `http://${window.location.hostname}:3000`
+      : window.location.origin;
+
+    const url = serverUrl || defaultUrl;
 
     this.socket = io(url, {
       autoConnect: true,
