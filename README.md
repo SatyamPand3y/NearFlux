@@ -97,7 +97,7 @@ In the root directory, you can run:
 ## 📁 Project Structure
 
 ```
-wifi-share
+NearFlux
 ├── client
 │   ├── index.html
 │   ├── package.json
