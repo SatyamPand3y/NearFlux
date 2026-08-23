@@ -28,7 +28,7 @@ if (fs.existsSync(clientDistPath)) {
 }
 
 // Health check endpoint
-app.get('/health', (_req: Request, res: Response) => {
+app.get(['/health', '/healthz'], (_req: Request, res: Response) => {
   res.json({
     status: 'ok',
     uptime: Math.floor((Date.now() - startTime) / 1000),
