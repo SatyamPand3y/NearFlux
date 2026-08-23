@@ -71,7 +71,7 @@ Unlike cloud storage services, **NearFlux transfers files directly peer-to-peer 
 - npm (v9+ recommended)
 
 ### Installation Steps
-1. **Clone** the repository: `git clone https://github.com/your-username/nearflux.git`
+1. **Clone** the repository: `git clone https://github.com/satyampand4y/nearflux.git`
 2. **Navigate** into the project directory: `cd nearflux`
 3. **Install** all dependencies: `npm run install:all`
 4. **Start** the development server: `npm run dev`
@@ -174,7 +174,7 @@ wifi-share
 Contributions are welcome! Here's the standard flow:
 
 1. **Fork** the repository
-2. **Clone** your fork: `git clone https://github.com/your-username/repo.git`
+2. **Clone** your fork: `git clone https://github.com/satyampand3y/nearflux.git`
 3. **Branch**: `git checkout -b feature/your-feature`
 4. **Commit**: `git commit -m 'feat: add some feature'`
 5. **Push**: `git push origin feature/your-feature`
